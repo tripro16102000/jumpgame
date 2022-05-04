@@ -1,0 +1,87 @@
+.game{
+    width: 1400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url(./img/dium.jpg);
+    
+}
+
+#player{
+    width: 100px;
+    height: 150px;
+    background-image: url(./img/messi-removebg-preview1.png);
+    background-size: 100px 150px ;
+    position: relative;
+    top: 355px;
+    
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0%{
+        top: 365px;
+    }
+    30%{
+        top: 300px;
+    }
+    50%{
+        top: 275px;
+    }
+    80%{
+        top: 300px;
+    }
+    100%{
+        top: 365px;
+    }
+}
+
+#cone{
+    width: 40px;
+    height: 60px;
+    position: relative;
+    top: 299px;
+    left: 1363px;
+    background-image: url(./img/cone-removebg-preview.png);
+    background-size: 40px 60px ;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block{
+    0%{
+        left: 1363px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    left: 500px;
+}
+
+#gameover{
+    font-size: 70px;
+    margin-left: 560px; 
+    margin-top: -150px;
+    display: none;
+    color: black;
+}
+
+#btn{
+    background-color: yellow;
+    height: 70px;
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 700px; 
+    margin-top: 20px;
+    
+}
